@@ -94,7 +94,7 @@ def check_dotnet_deps(include_transitive: bool, path: str) -> DotNetVulnerabilit
 
     
 def main():
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(add_help=True)
     parser.add_argument("--path", help="Path to the directory where your code and package manifest is held.", type=str)
     parser.add_argument("--failure-level", help="Provide the risk level that must be failed on. Options: critical, high, moderate", type=str)
     parser.add_argument("--ado", help="Choose if you are running in Azure DevOps pipeline.", action="store_true")

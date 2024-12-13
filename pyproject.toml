@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "LOLDeps"
+version = "0.0.1"
+authors = [
+  { name="Sam Pritchard", email="47423802+pritchyspritch@users.noreply.github.com" }
+]
+description = "A tool to find vulnerabilities in packages using native package manager tools such as nuget."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = []
+
+[project.scripts]
+sap = "LOLDeps:main"
+
+[project.urls]
+Homepage = "https://github.com/pritchyspritch/LOLDeps"
+Issues = "https://github.com/pritchyspritch/LOLDeps/issues"
