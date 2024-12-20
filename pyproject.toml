@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "LOLDeps"
-version = "0.0.2"
+version = "0.0.4"
 authors = [
   { name="Sam Pritchard", email="47423802+pritchyspritch@users.noreply.github.com" }
 ]
@@ -19,7 +19,7 @@ classifiers = [
 dependencies = []
 
 [project.scripts]
-lold = "loldeps:dependency_checker:main"
+lold = "LOLDeps.dependency_checker:main"
 
 [project.urls]
 Homepage = "https://github.com/pritchyspritch/LOLDeps"
