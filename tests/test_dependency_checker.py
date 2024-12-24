@@ -5,7 +5,7 @@ from unittest.mock import patch
 from io import StringIO
 
 # Ensure the path to src/LOLDeps is added to sys.path
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../src/LOLDeps')))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../src/loldeps')))
 
 from dependency_checker import DotNetVulnerabilities
 
