@@ -6,7 +6,7 @@ on:
   push:
     paths: 
       - '**.py'
-  workflow_call:
+  workflow_dispatch:
 
 jobs:
 
