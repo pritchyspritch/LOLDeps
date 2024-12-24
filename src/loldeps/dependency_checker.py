@@ -12,7 +12,7 @@ logger = logging.getLogger(__name__)
 
 
 class DotNetVulnerabilities:
-    def __init__(self, dotnet_vulns_dict):
+    def __init__(self, dotnet_vulns_dict: dict):
         self.dotnet_vulns_dicts = dotnet_vulns_dict
         self.critical_vulns = []
         self.high_vulns = []
@@ -146,7 +146,7 @@ def main():
         action="store_true",
     )
 
-    if len(sys.argv)==1:
+    if len(sys.argv) == 1:
         parser.print_help(sys.stderr)
         sys.exit(1)
 
