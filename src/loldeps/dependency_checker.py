@@ -3,8 +3,9 @@ import logging
 import sys
 import subprocess
 import json
-from itertools import chain
 import argparse
+
+from itertools import chain
 
 
 logging.basicConfig(stream=sys.stdout)
